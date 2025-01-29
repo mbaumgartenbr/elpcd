@@ -4,8 +4,8 @@ import 'package:provider/provider.dart';
 import '../../localization.dart';
 import 'settings_controller.dart';
 
-class DarkModeSwitchListTile extends StatelessWidget {
-  const DarkModeSwitchListTile({super.key});
+class DarkModeSwitchIconButton extends StatelessWidget {
+  const DarkModeSwitchIconButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,10 +19,12 @@ class DarkModeSwitchListTile extends StatelessWidget {
       false => (Icons.light_mode_outlined, null),
     };
 
-    return ListTile(
-      title: Text(AppLocalizations.of(context).themeModeButtonText),
-      trailing: Icon(icon),
-      onTap: () => context.read<SettingsController>().updateDarkMode(nextValue),
+    return IconButton(
+      tooltip: AppLocalizations.of(context).themeModeButtonText,
+      icon: Icon(icon),
+      onPressed: () {
+        context.read<SettingsController>().updateDarkMode(nextValue);
+      },
     );
   }
 }

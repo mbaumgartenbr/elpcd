@@ -144,7 +144,6 @@ class ClassesTreeView extends StatelessWidget {
 
     return TreeView(
       tree: tree,
-      controller: controller.treeController,
       treeNodeBuilder: (_, TreeViewNode<Classe> node, __) {
         return ClassesTreeViewNode(
           key: ValueKey(node.content.id ?? Object()),

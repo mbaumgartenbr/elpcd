@@ -7,7 +7,9 @@ import '../../repositories/classes_repository.dart';
 import '../../shared/class_title.dart';
 
 class SearchClassesButton extends StatelessWidget {
-  const SearchClassesButton({super.key});
+  const SearchClassesButton({super.key, this.style});
+
+  final ButtonStyle? style;
 
   @override
   Widget build(BuildContext context) {
@@ -18,13 +20,13 @@ class SearchClassesButton extends StatelessWidget {
           icon: const Icon(Icons.search),
           onPressed: controller.openView,
           tooltip: AppLocalizations.of(context).searchClassesButtonText,
+          style: style,
         );
       },
       viewConstraints: const BoxConstraints(minWidth: 600, minHeight: 400),
       viewShape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(6)),
       ),
-      dividerColor: Theme.of(context).colorScheme.outlineVariant,
     );
   }
 

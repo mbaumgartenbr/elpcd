@@ -27,6 +27,7 @@ class InstitutionCodeListTile extends StatelessWidget {
         color: Theme.of(context).colorScheme.primary,
         fontWeight: FontWeight.bold,
       ),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
     );
   }
 }

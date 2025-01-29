@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:two_dimensional_scrollables/two_dimensional_scrollables.dart';
 
-import '../../app/navigator.dart' as navigator;
 import '../../entities/classe.dart';
 import '../../localization.dart';
 import '../../shared/class_title.dart';
@@ -19,37 +17,6 @@ extension type TemporalityTableItem(Classe clazz) {
   String get disposal => _valueOf(EarqBrasilMetadata.destinacao);
 
   String get notes => _valueOf(EarqBrasilMetadata.observacoes);
-}
-
-class ShowTemporalityTableIconButton extends StatelessWidget {
-  const ShowTemporalityTableIconButton({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return IconButton(
-      icon: const Icon(Icons.table_chart_outlined),
-      tooltip: AppLocalizations.of(context).temporalityTableTitle,
-      onPressed: navigator.showTemporalityTable,
-    );
-  }
-}
-
-class TemporalityTableScreen extends StatelessWidget {
-  const TemporalityTableScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(AppLocalizations.of(context).temporalityTableTitle),
-        titleSpacing: 0,
-        notificationPredicate: (_) => false,
-      ),
-      body: TemporalityTable(
-        classesStore: context.read<ClassesStore>(),
-      ),
-    );
-  }
 }
 
 class TemporalityTable extends StatefulWidget {
