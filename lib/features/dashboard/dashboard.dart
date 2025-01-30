@@ -83,6 +83,11 @@ class _DashboardState extends State<Dashboard> {
   void handleTabSelected(DashboardTab tab) {
     if (tab == selectedTab) return;
 
+    if (scaffoldKey.currentState case final scaffoldState?
+        when scaffoldState.hasDrawer && scaffoldState.isDrawerOpen) {
+      scaffoldState.closeDrawer();
+    }
+
     setState(() {
       selectedTab = tab;
     });
@@ -120,7 +125,6 @@ class DashboardLayout extends StatelessWidget {
                 child: Column(
                   children: [
                     header,
-                    const Divider(height: 1),
                     Expanded(
                       child: body,
                     ),
