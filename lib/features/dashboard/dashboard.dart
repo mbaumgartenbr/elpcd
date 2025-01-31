@@ -18,8 +18,8 @@ enum DashboardTab {
 
   String localizedLabel(AppLocalizations l10n) {
     return switch (this) {
-      DashboardTab.classification => l10n.temporalityTableHeaderClassification,
-      DashboardTab.temporality => l10n.temporalityTableHeaderRententionPeriod,
+      DashboardTab.classification => l10n.dashboardTabClassificationSchemeLabel,
+      DashboardTab.temporality => l10n.dashboardTabTemporalityTableLabel,
     };
   }
 }
@@ -43,7 +43,6 @@ class _DashboardState extends State<Dashboard> {
       header: AppBar(
         notificationPredicate: (_) => false,
         leading: IconButton(
-          tooltip: 'Toggle Sidebar',
           icon: const RotatedBox(
             quarterTurns: 2,
             child: Icon(Icons.view_sidebar_outlined),

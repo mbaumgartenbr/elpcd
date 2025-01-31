@@ -52,21 +52,20 @@ class ImportExportMenuButton extends StatelessWidget {
         MenuItemButton(
           onPressed: () => handleAtomIsadCsvExport(context),
           leadingIcon: const Icon(Icons.north_east),
-          child: const Text('Export AtoM CSV ISAD(G) Template'),
+          child: Text(l10n.exportAtomIsadCsvButtonText),
         ),
         const Divider(),
         MenuItemButton(
           onPressed: () => handleJsonBackupExport(context),
           leadingIcon: const Icon(Icons.cloud_upload_outlined),
-          child: const Text('Export Backup'),
+          child: Text(l10n.exportBackupButtonText),
         ),
         MenuItemButton(
           onPressed: () => handleJsonBackupImport(context),
           leadingIcon: const Icon(Icons.cloud_download_outlined),
-          child: Text('${l10n.importButtonText} Backup'),
+          child: Text(l10n.importBackupButtonText),
         ),
       ],
-      child: Text(l10n.exportButtonText),
       builder: (BuildContext context, MenuController menu, _) {
         return IconButton(
           onPressed: () => menu.isOpen ? menu.close() : menu.open(),

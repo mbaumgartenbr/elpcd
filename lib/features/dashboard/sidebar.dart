@@ -109,7 +109,7 @@ class SidebarHeader extends StatelessWidget {
                   trailingIcon: const Icon(Icons.launch),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
-                    child: Text(l10n.sourceCodeButtonTooltip),
+                    child: Text(l10n.sourceCodeButtonText),
                   ),
                 ),
               ),
@@ -126,7 +126,7 @@ class SidebarHeader extends StatelessWidget {
                   trailingIcon: const Icon(Icons.launch),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
-                    child: Text(l10n.opdsBlogButtonTooltip),
+                    child: Text(l10n.opdsBlogButtonText),
                   ),
                 ),
               ),
