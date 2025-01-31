@@ -8,9 +8,7 @@
   "backupSuccessfullyExportedSnackbarText": "O arquivo exportado pode ser importado pelo ElPCD",
   "backupSuccessfullyImportedSnackbarText": "Backup importado com sucesso",
   "cancelButtonText": "Cancelar",
-  "collapseAllClassesButtonText": "Recolher Classes",
   "confirmImportDialogContent": "Os dados existentes serão perdidos.",
-  "csvDownloadButtonText": "Download CSV",
   "csvExportFondsArchivistNote": "Este Plano de Classificação de Documentos foi elaborado no Software [ElPCD](https://elpcd.github.io).",
   "deleteButtonText": "Apagar",
   "earqBrasilAberturaDefinition": "Registra a abertura de uma classe. Registrar informações tais como: data/hora e responsável. (e-ARQ Brasil 3.1.4)",
@@ -50,7 +48,6 @@
   "earqBrasilSubordinacaoDefinition": "Registra a subordinação da classe na hierarquia do plano. (e-ARQ Brasil 3.1.3)",
   "earqBrasilSubordinacaoLabel": "Subordinação",
   "emptyClassesExplorerBodyText": "Crie uma Classe para começar",
-  "expandAllClassesButtonText": "Expandir Classes",
   "exportButtonText": "Exportar",
   "importButtonText": "Importar",
   "institutionCodeTitle": "CODEARQ",
@@ -59,7 +56,6 @@
   "opdsBlogButtonTooltip": "Observatório da Preservação Digital Sistêmica",
   "saveButtonText": "Salvar",
   "searchClassesButtonText": "Buscar Classes",
-  "settingsButtonText": "Configurações",
   "sourceCodeButtonTooltip": "Código Fonte",
   "temporalityTableHeaderClassification": "Classificação",
   "temporalityTableHeaderCurrentAge": "Idade Corrente",
@@ -67,9 +63,7 @@
   "temporalityTableHeaderIntermediateAge": "Idade Intermediária",
   "temporalityTableHeaderNotes": "Observações",
   "temporalityTableHeaderRententionPeriod": "Prazo de Guarda",
-  "temporalityTableTitle": "Tabela de Temporalidade",
   "themeModeButtonText": "Tema",
   "unableToSaveClassSnackbarText": "Não foi possível salvar a Classe",
-  "unnamedClass": "Classe sem nome",
-  "wipFeatureTooltip": "Funcionalidade em desenvolvimento"
+  "unnamedClass": "Classe sem nome"
 }

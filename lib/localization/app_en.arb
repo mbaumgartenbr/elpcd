@@ -8,9 +8,7 @@
   "backupSuccessfullyExportedSnackbarText": "The exported file can be imported by ElPCD",
   "backupSuccessfullyImportedSnackbarText": "Backup imported successfully",
   "cancelButtonText": "Cancel",
-  "collapseAllClassesButtonText": "Collapse Classes",
   "confirmImportDialogContent": "Existing data will be lost.",
-  "csvDownloadButtonText": "CSV Download",
   "csvExportFondsArchivistNote": "This Classification Scheme was created using the [ElPCD](https://elpcd.github.io) software.",
   "deleteButtonText": "Delete",
   "earqBrasilAberturaDefinition": "Registers the opening of a class. Register informations such as: date/time and responsible. (e-ARQ Brasil 3.1.4)",
@@ -50,7 +48,6 @@
   "earqBrasilSubordinacaoDefinition": "Registers the subordination of a class in the scheme hierarchy. (e-ARQ Brasil 3.1.3)",
   "earqBrasilSubordinacaoLabel": "Subordination",
   "emptyClassesExplorerBodyText": "Start by creating a New Class",
-  "expandAllClassesButtonText": "Expand Classes",
   "exportButtonText": "Export",
   "importButtonText": "Import",
   "institutionCodeTitle": "Institution Code",
@@ -59,7 +56,6 @@
   "opdsBlogButtonTooltip": "Active Digital Preservation Observatory",
   "saveButtonText": "Save",
   "searchClassesButtonText": "Search Classes",
-  "settingsButtonText": "Settings",
   "sourceCodeButtonTooltip": "Source Code",
   "temporalityTableHeaderClassification": "Classification",
   "temporalityTableHeaderCurrentAge": "Current Age",
@@ -67,9 +63,7 @@
   "temporalityTableHeaderIntermediateAge": "Intermediate Age",
   "temporalityTableHeaderNotes": "Notes",
   "temporalityTableHeaderRententionPeriod": "Retention Period",
-  "temporalityTableTitle": "Retention And Disposal Table",
   "themeModeButtonText": "Theme",
   "unableToSaveClassSnackbarText": "Unable to save the Class",
-  "unnamedClass": "Unnamed Class",
-  "wipFeatureTooltip": "This feature is a work in progress"
+  "unnamedClass": "Unnamed Class"
 }
